@@ -1,0 +1,6 @@
+process,sample,mean,unit,kpi
+Edge finishing,5 x 1-min windows,35.6,parts/min,Output throughput (parts/h)
+Robotic drawer assembly,5 x 1-min windows,4.4,drawers/min/station,Output throughput (drawers/h)
+Final assembly,5 x 1-min windows,2.8,cabinets/min,Assembly output (cabinets/h)
+Manual packaging (carton application),5 operations,17.4,s/operation,Packaging cycle time (s/unit)
+Front picking (one 13-item order),1 order,150,s/order,Picking time (s/pick)

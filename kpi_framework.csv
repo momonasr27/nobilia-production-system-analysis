@@ -1,0 +1,10 @@
+process,primary_kpi,secondary_kpi
+Order processing & planning,Order processing lead time (h/order),First-time-right rate (%)
+Cutting & edge finishing,Material yield (%),Output throughput (parts/h)
+Cabinet component processing,Processing time (s/part),First-pass yield (%)
+Front preparation & customization,Picking accuracy (%),Picking time (s/pick)
+Robotic drawer assembly,Output throughput (drawers/h),First-pass yield (%)
+WIP logistics & storage,Kit availability (%),WIP dwell time (h)
+Final assembly & quality control,Assembly output (cabinets/h),First-pass yield (%)
+Packaging & labelling,Packaging cycle time (s/unit),Packaging accuracy (%)
+Outbound logistics,Loading productivity (units/person-hour),On-time dispatch rate (%)

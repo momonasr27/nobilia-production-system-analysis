@@ -1,0 +1,20 @@
+scenario,parameter,value,unit,type
+all,shift_length,8,h,assumption
+pick_by_light,items_per_order,13,items,observed
+pick_by_light,baseline_time_per_order,150,s,observed
+pick_by_light,seconds_saved_per_item,1;2,s,scenario
+edge_finishing,throughput_at_90pct_speed,39,parts/min,observed (mean of 4 undisrupted windows)
+edge_finishing,observed_stop,72,s per 6 min,observed
+edge_finishing,downtime_at_90pct,60,min per shift,assumption
+edge_finishing,downtime_at_80pct,0,min per shift,assumption
+edge_finishing,output_proportional_to_speed,yes,,assumption
+packaging,carton_application,17.4,s/unit,observed
+packaging,cart_lifting,4.6,s/unit,assumption
+packaging,automated_cycle,15,s/unit,assumption
+amr,cabinets_per_shift,1344,cabinets,derived (2.8 cabinets/min x 480 min)
+amr,cabinets_per_cart,11,cabinets,assumption
+amr,manual_minutes_per_trip,5,min,assumption
+amr,amr_minutes_per_trip,1,min,assumption
+amr,blocked_aisle_events,20,per shift,assumption
+amr,minutes_per_blockage,2,min,assumption
+amr,blocked_minutes_with_amr,5,min per shift,assumption
