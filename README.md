@@ -4,7 +4,7 @@ Consulting-style analysis of the production system of **Nobilia**, a large Germa
 
 The team mapped the value chain, assessed product modularity, timed production activities in the tour, identified waste (Lean / *muda*), and designed incremental, radical and sustainability improvements. For this repository I also **rebuilt the improvement scenarios in Python** to make every number reproducible and to test how sensitive they are to the assumptions.
 
-📄 [Read the full report](executive_report.md) · 📓 [Open the scenario notebook](improvement_scenarios.ipynb)
+📄 [Read the full report](docs/executive_report.md) · 📓 [Open the scenario notebook](notebooks/improvement_scenarios.ipynb)
 
 ---
 
@@ -25,7 +25,7 @@ How can a mass-customization manufacturer, with highly automated standard steps 
 | **Sustainability** | Environmental and social assessment; take-back of end-of-life kitchens; ergonomic workstations |
 
 <p align="center">
-  <img src="value_chain.png" width="90%"><br>
+  <img src="figures/value_chain.png" width="90%"><br>
   <em>End-to-end value chain: information, material and circular flows</em>
 </p>
 
@@ -44,8 +44,8 @@ How can a mass-customization manufacturer, with highly automated standard steps 
 | AMRs for internal transport | Radical | 10 → 2 worker hours/shift | −80% |
 
 <p align="center">
-  <img src="scenario2_edge_speed_breakeven.png" width="48%">
-  <img src="causal_loop_congestion.png" width="48%">
+  <img src="figures/scenario2_edge_speed_breakeven.png" width="48%">
+  <img src="figures/causal_loop_congestion.png" width="48%">
 </p>
 
 **Break-even insight:** slowing the edge-finishing line from 90% to 80% speed only pays off if it removes more than **~53 minutes of downtime per shift**. The real priority is therefore to *measure downtime over full shifts* before changing the line settings.
@@ -55,10 +55,16 @@ How can a mass-customization manufacturer, with highly automated standard steps 
 ```
 nobilia-production-system-analysis/
 ├── README.md
-├── executive_report.md           # full report (public version)
-├── improvement_scenarios.ipynb   # measurements, scenario models, sensitivity analysis
-├── *.csv                         # data: observations, measurements, KPIs, assumptions
-├── *.png                         # own diagrams + charts from the notebook
+├── docs/
+│   └── executive_report.md          # full report (public version)
+├── notebooks/
+│   └── improvement_scenarios.ipynb  # measurements, scenario models, sensitivity analysis
+├── data/
+│   ├── edge_finishing_observations.csv
+│   ├── sample_measurements.csv
+│   ├── kpi_framework.csv
+│   └── scenario_assumptions.csv     # every assumption, labelled observed / assumed
+├── figures/                          # own diagrams + charts from the notebook
 └── requirements.txt
 ```
 
@@ -66,6 +72,7 @@ nobilia-production-system-analysis/
 
 ```bash
 pip install -r requirements.txt
+cd notebooks
 jupyter notebook improvement_scenarios.ipynb
 ```
 

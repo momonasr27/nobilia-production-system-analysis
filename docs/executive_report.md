@@ -15,7 +15,7 @@ As illustrated in Figure 1, the production system consists of several interconne
 
 Nobilia combines automation in standardized, high-volume operations with manual flexibility in processes characterized by extensive product variety and smaller quantities, particularly front picking. Additionally, wood residues are returned to chipboard manufacturers, establishing a circular material flow alongside the main value chain.
 
-![Value chain](value_chain.png)
+![Value chain](../figures/value_chain.png)
 
 Figure 1: Nobilia’s End-to-End Value Chain – Information, Material and Circular Flows
 
@@ -27,7 +27,7 @@ Source: Own illustration based on the tour (created with the support of ChatGPT)
 
 Nine processes \| parallel components \| synchronized final assembly
 
-![Process architecture](process_architecture.png)
+![Process architecture](../figures/process_architecture.png)
 
 Figure 2: Production Process Architecture \| Sequential and Parallel Process Flows
 
@@ -61,7 +61,7 @@ A potential reinforcing feedback loop at the manual cart-loading interface
 
 Reinforcing \| Potential congestion spiral
 
-![Causal loop](causal_loop_congestion.png)
+![Causal loop](../figures/causal_loop_congestion.png)
 
 Figure 4: Reinforcing causal loop \| two negative causal links make the overall feedback reinforcing
 
@@ -79,7 +79,7 @@ The upstream stages operate independently of individual orders (Figure 5). Chipb
 
 This customer order decoupling point has three effects. First, production control shifts from push to pull, moving from stock production in large lots towards lot size one. Second, automation decreases as product variety increases, making manual operations more prominent downstream. Third, order information must accompany each component, while carcass, front and drawer flows must be synchronized to arrive at assembly at the right time. Nobilia therefore follows an assemble-to-order approach to mass customization. However, the available process observations do not establish whether cutting is already order-specific, meaning the decoupling point may lie further upstream.
 
-![Customer order decoupling point](decoupling_point.png)
+![Customer order decoupling point](../figures/decoupling_point.png)
 
 Figure 5: Nobilia’s Production Flow \| Forecast-Driven (Push) and Order-Driven (Pull) Processes Around the Customer Order Decoupling Point (CODP)
 
